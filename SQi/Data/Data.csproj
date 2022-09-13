@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Constants\RabbitQueue.cs~RF2a68e20f.TMP" />
+    <None Remove="DataAccess\ApplicationDbContext.cs~RF15c6c309.TMP" />
+    <None Remove="MongoCollections\WorkingSession.cs~RF1fb3ac4.TMP" />
+    <None Remove="ViewModels\PrEPModel.cs~RF3da8f007.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
+  </ItemGroup>
+</Project>
